@@ -1,0 +1,61 @@
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+/* Botón */
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+    padding: 12px;
+
+    text-decoration: none;
+    color: inherit;
+    border-radius: 12px;
+}
+
+/* Desktop */
+.button img {
+    width: 70px;
+    height: 40px;
+}
+
+.button span {
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.button.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 8px;
+    }
+
+    .button {
+        padding: 8px;
+    }
+
+    .button img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .button span {
+        font-size: 11px;
+    }
+}
