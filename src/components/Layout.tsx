@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Buttons from "../components/Buttons";
+import Header from "./Header";
 import "../styles/Layout.css";
 
 export default function Layout() {
@@ -10,6 +11,7 @@ export default function Layout() {
       </aside>
 
       <main className="content">
+        <Header />
         <Outlet />
       </main>
     </div>
