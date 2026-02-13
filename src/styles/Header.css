@@ -1,18 +1,18 @@
-.header {
+#header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 1rem;
 }
 
-.header-right {
+#header-right {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
 /* Language selector */
-.language-select {
+#language-select {
   padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.15);
@@ -21,7 +21,7 @@
 }
 
 /* Theme toggle */
-.theme-toggle {
+#theme-toggle {
   width: 36px;
   height: 36px;
   border-radius: 999px;
@@ -35,6 +35,6 @@
   font-size: 14px;
 }
 
-.theme-toggle:hover {
+#theme-toggle:hover {
   background: rgba(0, 0, 0, 0.05);
 }

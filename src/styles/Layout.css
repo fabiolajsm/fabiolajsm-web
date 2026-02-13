@@ -1,6 +1,7 @@
 .layout {
   display: flex;
   width: 100%;
+  height: 100%;
 }
 /* Testtt this is NOT final, just testing themes */
 .layout.light {
@@ -13,15 +14,9 @@
   color: #f8fafc;
 }
 
-.sidebar {
-  width: 150px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 .content {
+  width: 100%;
+  height: 100%;
   flex-grow: 1;
   min-width: 0;
 }

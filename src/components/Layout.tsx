@@ -8,10 +8,8 @@ export default function Layout() {
   const { theme } = useTheme();
 
   return (
-    <div className={`layout ${theme}`}>
-      <aside className="sidebar">
-        <Buttons />
-      </aside>
+    <div className={`layout ${theme}`}>  
+      <Buttons />
 
       <main className="content">
         <Header />

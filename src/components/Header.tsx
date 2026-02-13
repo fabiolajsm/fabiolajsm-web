@@ -11,15 +11,14 @@ export default function Header() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="header">
-      <div className="header-right">
+    <header id="header">
+      <div id="header-right">
         <select
           id="language-select"
           value={lang}
           onChange={(e) =>
             dispatch(setLanguage(e.target.value as typeof lang))
           }
-          className="language-select"
         >
           {LANGUAGES.map(({ code, label }) => (
             <option key={code} value={code}>
@@ -31,7 +30,7 @@ export default function Header() {
         {/* Later I'll add styles and animations */}
         <button
           id="theme-toggle"
-          className="theme-toggle" onClick={setTheme}>
+          onClick={setTheme}>
           {theme === "light" ? "☀️" : "🌙"}
         </button>
       </div>
