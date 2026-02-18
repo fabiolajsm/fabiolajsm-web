@@ -15,7 +15,7 @@
 #language-select {
   padding: 6px 10px;
   border-radius: 8px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 14px;
   cursor: pointer;
 }
@@ -25,7 +25,7 @@
   width: 36px;
   height: 36px;
   border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background: white;
   cursor: pointer;
 

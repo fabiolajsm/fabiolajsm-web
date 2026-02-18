@@ -2,13 +2,13 @@
   min-width: 150px;
   max-width: 150px;
   height: 100%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  
+
 }
 
 .button {
@@ -23,7 +23,8 @@
   border-radius: 12px;
   transition: scale 0.3s ease-in;
 }
-.button:hover{
+
+.button:hover {
   scale: 1.05;
 }
 
@@ -48,10 +49,15 @@
 /* Mobile */
 @media (max-width: 768px) {
   .buttons {
+    max-width: fit-content;
+    order: 2;
     flex-direction: row;
-    justify-content: space-around;
-    height: auto;          
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 100%;
+    margin: auto;
+    gap: 30px;
   }
 
   .button {

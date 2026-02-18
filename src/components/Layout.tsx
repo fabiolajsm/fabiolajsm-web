@@ -8,7 +8,7 @@ export default function Layout() {
   const { theme } = useTheme();
 
   return (
-    <div className={`layout ${theme}`}>  
+    <div className={`layout ${theme}`}>
       <Buttons />
 
       <main className="content">
