@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import Buttons from "../components/Buttons";
 import Header from "./Header";
 import "../styles/Layout.css";
 
 export default function Layout() {
-  const { theme } = useTheme();
+  const theme = useSelector((state: RootState) => state.ui.theme);
 
   return (
     <div className={`layout ${theme}`}>

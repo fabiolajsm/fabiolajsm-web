@@ -1,14 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useTheme } from "../context/ThemeContext";
 import { RootState } from "../store";
-import { setLanguage } from "../store/uiSlice";
+import { setLanguage, setTheme } from "../store/uiSlice";
 import { LANGUAGES } from "../i18n";
 import "../styles/Header.css";
 
 export default function Header() {
   const dispatch = useDispatch();
   const lang = useSelector((state: RootState) => state.ui.language);
-  const { theme, setTheme } = useTheme();
+  const theme = useSelector((state: RootState) => state.ui.theme);
 
   return (
     <header id="header">
@@ -30,7 +29,7 @@ export default function Header() {
         {/* Later I'll add styles and animations */}
         <button
           id="theme-toggle"
-          onClick={setTheme}>
+          onClick={() => dispatch(setTheme())}>
           {theme === "light" ? "☀️" : "🌙"}
         </button>
       </div>

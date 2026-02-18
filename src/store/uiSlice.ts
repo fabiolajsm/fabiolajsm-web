@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { Language } from "../i18n";
-import type { Theme } from "../context/ThemeContext";
+
+type Theme = "light" | "dark";
 
 type UIState = {
   language: Language;

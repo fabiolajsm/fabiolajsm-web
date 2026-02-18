@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
-import { translations, TranslationKey } from "../i18n";
+import { translations, TranslationKey } from ".";
 
 type I18nContextType = {
   getText: (key: TranslationKey) => string;

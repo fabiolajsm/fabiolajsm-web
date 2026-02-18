@@ -1,4 +1,4 @@
-import { useI18n } from "../context/I18nContext";
+import { useI18n } from "../i18n/I18nContext";
 import { NavLink } from "react-router-dom";
 import aboutIcon from "../assets/icons/about.png";
 import experienceIcon from "../assets/icons/experience.png";
