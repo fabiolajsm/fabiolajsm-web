@@ -5,15 +5,16 @@
   height: 100%;
 }
 
-/* Testtt this is NOT final, just testing themes */
 .layout.light {
-  background-color: #ffffff;
-  color: #111;
+  background-color: #edede9;
+  background-image: radial-gradient(#cad2c5 0.8px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .layout.dark {
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: #000000;
+  background-image: radial-gradient(#4a5759 0.5px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .content {
