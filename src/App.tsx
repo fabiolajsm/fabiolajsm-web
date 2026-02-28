@@ -1,25 +1,49 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "./store";
+import { useI18n } from "./i18n/I18nContext";
 
-import Layout from "./components/Layout";
+import Header from "./components/Header";
+import SectionNavigation from "./components/SectionNavigation";
 
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+
+import "./index.css";
 
 export default function App() {
+  const theme = useSelector((state: RootState) => state.ui.theme);
+  const { getText } = useI18n();
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className={`layout ${theme}`}>
+      <Header />
+      <SectionNavigation />
+
+      <main className="content">
+        <section id="greeting">
+          <h1>{getText("title")}</h1>
+          <h2>{getText("subtitle")}</h2>
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="experience">
+          <Experience />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+      </main>
+
+    </div>
   );
 }

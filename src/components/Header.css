@@ -1,0 +1,107 @@
+#header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Wrapper para posicionar dropdown */
+.language-wrapper {
+  position: relative;
+}
+
+/* Language toggle button */
+#language-toggle {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 10px;
+  border: 2px solid #d9dde1;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  cursor: pointer;
+
+  box-shadow: 2px 2px 0px 0px #1e2530;
+  transition: all 0.15s ease;
+}
+
+/* Theme toggle */
+#theme-toggle {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 10px;
+  border: 2px solid #d9dde1;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  cursor: pointer;
+
+  box-shadow: 2px 2px 0px 0px #111827;
+  transition: all 0.15s ease;
+}
+
+/* Hover press effect */
+#language-toggle:hover,
+#theme-toggle:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #111827;
+}
+
+/* Dropdown card */
+.language-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 120px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #d9dde1;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #1e2530;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7f7f7f;
+}
+
+/* Language options */
+.language-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: context-menu;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.language-option:hover {
+  background-color: #fdf4d8;
+}
+
+.language-option.active::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #ff3b3b;
+  border-radius: 50%;
+}

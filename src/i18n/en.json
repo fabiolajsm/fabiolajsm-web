@@ -1,9 +1,9 @@
 {
-  "home_title": "Hi, I'm Fabi",
-  "home_subtitle": "Full Stack Developer",
+  "title": "Hi! I'm Fabiola Suárez",
+  "subtitle": "Full Stack Developer",
   
-  "sidebar_about": "About Me",
-  "sidebar_experience": "Experience",
-  "sidebar_projects": "Projects",
-  "sidebar_contact": "Contact"
+  "navbar_about": "About Me",
+  "navbar_experience": "Experience",
+  "navbar_projects": "Projects",
+  "navbar_contact": "Contact"
 }

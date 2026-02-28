@@ -1,9 +1,9 @@
 {
-  "home_title": "Hola, soy Fabi",
-  "home_subtitle": "Full Stack Developer",
+  "title": "Hola! Soy Fabiola Suárez",
+  "subtitle": "Full Stack Developer",
 
-  "sidebar_about": "Sobre mí",
-  "sidebar_experience": "Experiencia",
-  "sidebar_projects": "Proyectos",
-  "sidebar_contact": "Contacto"
+  "navbar_about": "Sobre mí",
+  "navbar_experience": "Experiencia",
+  "navbar_projects": "Proyectos",
+  "navbar_contact": "Contacto"
 }

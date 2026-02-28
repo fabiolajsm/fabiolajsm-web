@@ -1,0 +1,49 @@
+#window-card {
+    border-radius: 24px;
+    border: 2px solid #d9d9d9;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#window-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+#window-header {
+    padding: 14px 20px;
+    border-bottom: 2px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#window-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+#window-buttons span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff80;
+    border: 1px solid #d9d9d9;
+}
+
+#window-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: #7f7f7f;
+    text-transform: uppercase;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#window-content {
+    padding: 40px;
+}
