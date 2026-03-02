@@ -1,8 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { RootState } from "../store";
+import { Globe, Moon, SunMedium } from "lucide-react";
+
 import { setLanguage, setTheme } from "../store/uiSlice";
 import { LANGUAGES } from "../i18n";
-import { useState } from "react";
+
 import "./Header.css";
 
 export default function Header() {
@@ -20,14 +23,13 @@ export default function Header() {
   return (
     <header id="header">
       <div id="header-right">
-        
-        {/* Language Button */}
         <div className="language-wrapper">
           <button
             id="language-toggle"
+            className="header-button"
             onClick={() => setIsOpen(!isOpen)}
           >
-            🌐
+            <Globe size={20} />
           </button>
 
           {isOpen && (
@@ -35,9 +37,8 @@ export default function Header() {
               {LANGUAGES.map(({ code, label }) => (
                 <div
                   key={code}
-                  className={`language-option ${
-                    lang === code ? "active" : ""
-                  }`}
+                  className={`language-option ${lang === code ? "active" : ""
+                    }`}
                   onClick={() => handleLanguageChange(code)}
                 >
                   {label}
@@ -47,14 +48,13 @@ export default function Header() {
           )}
         </div>
 
-        {/* Theme Toggle */}
         <button
           id="theme-toggle"
+          className="header-button"
           onClick={() => dispatch(setTheme())}
         >
-          {theme === "light" ? "☀️" : "🌙"}
+          {theme === "light" ? <SunMedium size={20} /> : <Moon size={20} />}
         </button>
-
       </div>
     </header>
   );

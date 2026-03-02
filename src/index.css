@@ -54,6 +54,11 @@ h2 {
   margin-top: 40px;
 }
 
+.phrase-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .layout {
@@ -64,5 +69,10 @@ h2 {
     order: 1;
     /* same height as fixed navigation bar */
     margin-bottom: 80px;
+  }
+
+  .phrase-section {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

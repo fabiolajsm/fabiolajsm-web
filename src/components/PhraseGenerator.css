@@ -1,0 +1,70 @@
+.phrase-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 5px 30px;
+    border-radius: 40px;
+
+    background-color: #f5f5f5;
+    border: 2px solid #dcdcdc;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.phrase-container:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.phrase-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #dcdcdc;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.phrase-button:hover {
+    background-color: #fdf4d8;
+}
+
+.phrase-button svg {
+    transition: transform 0.5s ease;
+}
+
+.phrase-button:hover svg {
+    transform: rotate(180deg);
+}
+
+.phrase-text-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+.phrase-text {
+    text-align: center;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    color: #4b5563;
+    transition: all 0.3s ease;
+}
+
+.phrase-text.animate-out {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.phrase-text.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}

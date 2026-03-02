@@ -3,6 +3,7 @@ import { RootState } from "./store";
 import { useI18n } from "./i18n/I18nContext";
 
 import Header from "./components/Header";
+import PhraseGenerator from "./components/PhraseGenerator";
 import SectionNavigation from "./components/SectionNavigation";
 
 import About from "./sections/About";
@@ -42,8 +43,11 @@ export default function App() {
         <section id="projects">
           <Projects />
         </section>
-      </main>
 
+        <section id="phrase" className="phrase-section">
+          <PhraseGenerator />
+        </section>
+      </main>
     </div>
   );
 }
