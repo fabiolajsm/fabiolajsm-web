@@ -1,9 +1,6 @@
 import { useI18n } from "../i18n/I18nContext";
-import aboutIcon from "../assets/icons/about.png";
-import experienceIcon from "../assets/icons/experience.png";
-import projectsIcon from "../assets/icons/projects.png";
-import contactIcon from "../assets/icons/contact.png";
 import "./SectionNavigation.css";
+import { BriefcaseBusiness, CodeXml, Mail, UserRound } from "lucide-react";
 
 export default function SectionNavigation() {
   const { getText } = useI18n();
@@ -12,7 +9,7 @@ export default function SectionNavigation() {
     <nav id="sectionNavigation" className="sectionNavigation">
       <div className="sectionNavigation_item">
         <button className="sectionNavigation_button">
-          <img src={aboutIcon} alt="About" />
+          <UserRound size={20} />
         </button>
         <span className="sectionNavigation_label">
           {getText("navbar_about")}
@@ -21,7 +18,7 @@ export default function SectionNavigation() {
 
       <div className="sectionNavigation_item">
         <button className="sectionNavigation_button">
-          <img src={experienceIcon} alt="Experience" />
+          <BriefcaseBusiness size={20} />
         </button>
         <span className="sectionNavigation_label">
           {getText("navbar_experience")}
@@ -30,7 +27,7 @@ export default function SectionNavigation() {
 
       <div className="sectionNavigation_item">
         <button className="sectionNavigation_button">
-          <img src={projectsIcon} alt="Projects" />
+          <CodeXml size={20} />
         </button>
         <span className="sectionNavigation_label">
           {getText("navbar_projects")}
@@ -39,7 +36,7 @@ export default function SectionNavigation() {
 
       <div className="sectionNavigation_item">
         <button className="sectionNavigation_button">
-          <img src={contactIcon} alt="Contact" />
+          <Mail size={20} />
         </button>
         <span className="sectionNavigation_label">
           {getText("navbar_contact")}
