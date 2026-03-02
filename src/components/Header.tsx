@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   return (
-    <header id="header">
+    <header id="header" className={theme}>
       <div id="header-right">
         <div className="language-wrapper">
           <button

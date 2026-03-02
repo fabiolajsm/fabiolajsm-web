@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { RefreshCw } from "lucide-react";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 import "./PhraseGenerator.css";
 
 const phrases = [
@@ -14,11 +16,13 @@ const phrases = [
 ];
 
 export default function PhraseGenerator() {
+  const theme = useSelector((state: RootState) => state.ui.theme);
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
 
     return (
-        <div className="phrase-container">
+        <div className={`phrase-container ${theme}`}>
             <button
                 id="phrase-button"
                 className="phrase-button"

@@ -38,14 +38,17 @@ h2 {
 
 .layout.light {
   background-color: #edede9;
-  background-image: radial-gradient(#e3d5ca 0.8px, transparent 1px);
   background-size: 40px 40px;
 }
 
 .layout.dark {
-  background-color: #000000;
-  background-image: radial-gradient(#4a5759 0.5px, transparent 1px);
+  background-color: #14181f;
   background-size: 40px 40px;
+}
+
+.layout.dark h1,
+.layout.dark h2 {
+  color: #F5F3F0;
 }
 
 .content {

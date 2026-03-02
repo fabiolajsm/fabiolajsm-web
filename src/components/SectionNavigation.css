@@ -32,11 +32,10 @@
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.2s ease;
-}
 
-.sectionNavigation_button img {
-  width: 40px;
-  opacity: 0.7;
+  svg {
+    color: #7f7f7f;
+  }
 }
 
 .sectionNavigation_label {
@@ -45,6 +44,23 @@
   text-transform: uppercase;
   font-weight: 500;
   color: #7f7f7f;
+}
+
+.sectionNavigation_item:hover {
+  transform: translateY(-2px);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sectionNavigation_item:hover .sectionNavigation_button {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+  svg {
+    color: black;
+  }
+}
+
+.sectionNavigation_item:hover .sectionNavigation_label {
+  color: black;
 }
 
 /* Mobile */
@@ -56,7 +72,7 @@
     width: 100%;
     /* same height as fixed navigation bar */
     height: 80px;
-    
+
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -65,12 +81,53 @@
     z-index: 1000;
   }
 
+  .layout.dark .sectionNavigation {
+    background-color: #14181f;
+    border-top: transparent;
+  }
+
   .sectionNavigation_button {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 
   .sectionNavigation_label {
     font-size: 10px;
   }
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+.sectionNavigation_item.dark .sectionNavigation_button {
+  background-color: #1D212B;
+  /* gris oscuro elegante */
+  border: 2px solid #111827;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+.sectionNavigation_item.dark .sectionNavigation_button svg {
+  color: #F5F3F0;
+  opacity: 50%;
+}
+
+.sectionNavigation_item.dark .sectionNavigation_label {
+  color: #F5F3F0;
+  opacity: 50%;
+}
+
+/* Hover en dark */
+.sectionNavigation_item.dark:hover .sectionNavigation_button {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.sectionNavigation_item.dark:hover .sectionNavigation_button svg {
+  color: #F5F3F0;
+  opacity: 90%;
+}
+
+.sectionNavigation_item.dark:hover .sectionNavigation_label {
+  color: #F5F3F0;
+  opacity: 90%;
 }
