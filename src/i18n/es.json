@@ -5,5 +5,17 @@
   "navbar_about": "Sobre mí",
   "navbar_experience": "Experiencia",
   "navbar_projects": "Proyectos",
-  "navbar_contact": "Contacto"
+  "navbar_contact": "Contacto",
+
+  "project_ecommerce_title": "E-Commerce",
+  "project_ecommerce_description": "Interfaz completa de e-commerce con listado de productos, carrito y flujo de compra hecha con React.",
+
+  "project_budget_title": "Gestor de Presupuestos",
+  "project_budget_description": "Aplicación de gestión de presupuestos con operaciones CRUD y manejo de estado.",
+
+  "project_invitationCreator_title": "Creador de Invitaciones",
+  "project_invitationCreator_description": "Aplicación para crear y gestionar invitaciones personalizadas.",
+
+  "experience_studies": "Estudios",
+  "experience_jobs": "Trabajos"
 }

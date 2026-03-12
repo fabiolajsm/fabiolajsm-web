@@ -22,40 +22,38 @@ export default function Header() {
 
   return (
     <header id="header" className={theme}>
-      <div id="header-right">
-        <div className="language-wrapper">
-          <button
-            id="language-toggle"
-            className="header-button"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <Globe size={20} />
-          </button>
-
-          {isOpen && (
-            <div className="language-dropdown">
-              {LANGUAGES.map(({ code, label }) => (
-                <div
-                  key={code}
-                  className={`language-option ${lang === code ? "active" : ""
-                    }`}
-                  onClick={() => handleLanguageChange(code)}
-                >
-                  {label}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
+      <div className="language-wrapper">
         <button
-          id="theme-toggle"
+          id="language-toggle"
           className="header-button"
-          onClick={() => dispatch(setTheme())}
+          onClick={() => setIsOpen(!isOpen)}
         >
-          {theme === "light" ? <SunMedium size={20} /> : <Moon size={20} />}
+          <Globe size={20} />
         </button>
+
+        {isOpen && (
+          <div className="language-dropdown">
+            {LANGUAGES.map(({ code, label }) => (
+              <div
+                key={code}
+                className={`language-option ${lang === code ? "active" : ""
+                  }`}
+                onClick={() => handleLanguageChange(code)}
+              >
+                {label}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
+
+      <button
+        id="theme-toggle"
+        className="header-button"
+        onClick={() => dispatch(setTheme())}
+      >
+        {theme === "light" ? <SunMedium size={20} /> : <Moon size={20} />}
+      </button>
     </header>
   );
 }

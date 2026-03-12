@@ -28,11 +28,8 @@ export default function App() {
           <h2>{getText("subtitle")}</h2>
         </section>
 
-        <section id="contact">
+        <section id="contact/about" className="contact-about">
           <Contact />
-        </section>
-
-        <section id="about">
           <About />
         </section>
 

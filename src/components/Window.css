@@ -4,11 +4,9 @@
     background-color: #f5f5f5;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 #window-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
@@ -37,13 +35,33 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     color: #7f7f7f;
     text-transform: uppercase;
     font-family: "Space Grotesk", sans-serif;
 }
 
 #window-content {
-    padding: 40px;
+    padding: 30px;
+}
+
+/* DARK MODE */
+.dark #window-card {
+    background-color: transparent;
+    border: 2px solid #1D212B;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.dark #window-header {
+    border-color: #1D212B;
+}
+
+.dark #window-buttons span {
+    background-color: #ffffff20;
+    border: 1px solid #1D212B;
+}
+
+.dark #window-title {
+    color: #f1faee;
 }

@@ -5,5 +5,17 @@
   "navbar_about": "About Me",
   "navbar_experience": "Experience",
   "navbar_projects": "Projects",
-  "navbar_contact": "Contact"
+  "navbar_contact": "Contact",
+
+  "project_ecommerce_title": "E-Commerce",
+  "project_ecommerce_description": "Full e-commerce interface with product listing, cart and checkout flow built with React.",
+
+  "project_budget_title": "Budget Manager",
+  "project_budget_description": "Budget management app with CRUD operations and state management.",
+
+  "project_invitationCreator_title": "Invitation Creator",
+  "project_invitationCreator_description": "App for creating and managing customized invitations.",
+
+  "experience_studies": "Studies",
+  "experience_jobs": "Jobs"
 }

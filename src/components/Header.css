@@ -1,15 +1,12 @@
 #header {
+  position: fixed;
+  top: 20px;
+  right: 30px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  z-index: 1000;
-}
-
-#header-right {
-  display: flex;
-  align-items: center;
   gap: 20px;
+  justify-content: end;
+  width: auto;
+  z-index: 1000;
 }
 
 .header-button {
@@ -18,7 +15,7 @@
 
   border-radius: 12px;
   border: 2px solid #d9dde1;
-  background: transparent;
+  background: #edede9;
 
   display: flex;
   align-items: center;
@@ -35,7 +32,7 @@
   box-shadow: 0px 0px 0px 0px #1e2530;
 }
 
-/* Animación del segundo CSS */
+/* Animación de CSS */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -59,7 +56,7 @@
   width: 120px;
   padding: 10px;
 
-  background: transparent;
+  background: #edede9;
   border: 2px solid #d9dde1;
   border-radius: 10px;
   box-shadow: 5px 5px 0px 0px #1e2530;
@@ -97,9 +94,7 @@
   border-radius: 50%;
 }
 
-/* =========================
-   DARK MODE
-========================= */
+/* DARK MODE */
 .dark .header-button {
   border: 2px solid #1D212B;
   background: #14181f;
@@ -121,7 +116,6 @@
   background: #14181f;
   box-shadow: 5px 5px 0px 0px #000000;
   color: #F5F3F0;
-  opacity: 80%;
 }
 
 .dark .language-option:hover {

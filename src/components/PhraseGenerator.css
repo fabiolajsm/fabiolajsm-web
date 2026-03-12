@@ -38,6 +38,7 @@
 }
 
 .phrase-button svg {
+    color: #4b5563;
     transition: transform 0.5s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
@@ -73,9 +74,7 @@
     transform: translateY(0);
 }
 
-/* =========================
-   DARK MODE
-========================= */
+/* DARK MODE */
 .phrase-container.dark {
     background-color: transparent;
     border: 2px solid #1D212B;
@@ -91,20 +90,10 @@
     border-color: #1D212B;
 }
 
-.phrase-container.dark .phrase-button:hover {
-    background-color: #fdf4d8;
-}
-
 .phrase-container.dark .phrase-button svg {
-    color: #F5F3F0;
-    opacity: 80%;
-}
-
-.phrase-container.dark .phrase-button:hover svg {
-    color: #1D212B;
+    color: #f1faee;
 }
 
 .phrase-container.dark .phrase-text {
-    color: #F5F3F0;
-    opacity: 80%;
+    color: #f1faee;
 }
