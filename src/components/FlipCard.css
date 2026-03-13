@@ -1,7 +1,8 @@
 .flip-card-container {
     cursor: pointer;
     height: 250px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .flip-card {
@@ -20,7 +21,8 @@
 .flip-card-back {
     position: absolute;
     height: 250px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     backface-visibility: hidden;
     border-radius: 20px;
     display: flex;
@@ -77,4 +79,25 @@
 .dark .flip-card-description,
 .dark .flip-card-icon {
     color: #f1faee;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .flip-card-container {
+        height: 220px;
+        max-width: 350px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        height: 220px;
+    }
+
+    .flip-card-title {
+        font-size: 18px;
+    }
+
+    .flip-card-description {
+        font-size: 16px;
+    }
 }

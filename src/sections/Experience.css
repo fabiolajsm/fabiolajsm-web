@@ -48,10 +48,20 @@
 @media (max-width: 768px) {
   .experience-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 40px;
+  }
+
+  .experience-grid hr {
+    display: none;
   }
 
   .experience-column {
+    align-items: center;
+    min-width: unset;
+  }
+
+  .experience-cards {
+    width: 100%;
     align-items: center;
   }
 }

@@ -23,7 +23,7 @@ export default function App() {
       <SectionNavigation />
 
       <main className="content">
-        <section id="greeting">
+        <section id="greeting" className="greeting">
           <h1>{getText("title")}</h1>
           <h2>{getText("subtitle")}</h2>
         </section>
