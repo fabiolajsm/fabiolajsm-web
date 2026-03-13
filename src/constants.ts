@@ -41,6 +41,24 @@ export const STUDIES_DATA = [
     period: "2023",
     desc: "Dominio de patrones avanzados en React, state management y optimización de rendimiento en aplicaciones grandes.",
   },
+  {
+    title: "Licenciatura en Informática 2",
+    company: "Universidad Nacional",
+    period: "2019 - 2023",
+    desc: "Formación completa en ingeniería de software, algoritmos avanzados y arquitectura de sistemas. Especialización en desarrollo web moderno.",
+  },
+  {
+    title: "Bootcamp Full Stack 2",
+    company: "Tech Academy",
+    period: "2019",
+    desc: "Intensivo de 12 semanas en MERN stack, implementación de APIs RESTful y buenas prácticas de desarrollo profesional.",
+  },
+  {
+    title: "Certificación React Avanzado 2",
+    company: "Plataforma Online",
+    period: "2023",
+    desc: "Dominio de patrones avanzados en React, state management y optimización de rendimiento en aplicaciones grandes.",
+  },
 ];
 
 export const JOBS_DATA = [
@@ -58,6 +76,18 @@ export const JOBS_DATA = [
   },
   {
     title: "Full Stack Developer",
+    company: "Startup Hub",
+    period: "2019 - 2021",
+    desc: "Desarrollo ágil de MVPs y productos digitales desde cero. Manejo del stack completo desde base de datos hasta despliegue en producción.",
+  },
+  {
+    title: "Frontend Specialist2",
+    company: "Creative Design Agency",
+    period: "2021 - 2023",
+    desc: "Especialización en interfaces interactivas complejas y sistemas de diseño para clientes internacionales. Colaboración con equipos de producto.",
+  },
+  {
+    title: "Full Stack Developer2",
     company: "Startup Hub",
     period: "2019 - 2021",
     desc: "Desarrollo ágil de MVPs y productos digitales desde cero. Manejo del stack completo desde base de datos hasta despliegue en producción.",
