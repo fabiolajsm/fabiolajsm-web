@@ -33,6 +33,10 @@ export default function App() {
           <About />
         </section>
 
+        <section id="stack">
+          {/* TODO: Carrousel animado con el stack */}
+        </section>
+
         <section id="experience">
           <Experience />
         </section>

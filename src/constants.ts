@@ -21,3 +21,45 @@ export const PROJECTS: Project[] = [
     previewClass: "invitationCreator",
   },
 ];
+
+export const STUDIES_DATA = [
+  {
+    title: "Licenciatura en Informática",
+    company: "Universidad Nacional",
+    period: "2019 - 2023",
+    desc: "Formación completa en ingeniería de software, algoritmos avanzados y arquitectura de sistemas. Especialización en desarrollo web moderno.",
+  },
+  {
+    title: "Bootcamp Full Stack",
+    company: "Tech Academy",
+    period: "2019",
+    desc: "Intensivo de 12 semanas en MERN stack, implementación de APIs RESTful y buenas prácticas de desarrollo profesional.",
+  },
+  {
+    title: "Certificación React Avanzado",
+    company: "Plataforma Online",
+    period: "2023",
+    desc: "Dominio de patrones avanzados en React, state management y optimización de rendimiento en aplicaciones grandes.",
+  },
+];
+
+export const JOBS_DATA = [
+  {
+    title: "Senior Full Stack Developer",
+    company: "Global Tech Solutions",
+    period: "2023 - Present",
+    desc: "Liderazgo técnico en el desarrollo de plataformas SaaS de alta escala. Implementación de arquitecturas modernas y optimización de flujos de trabajo.",
+  },
+  {
+    title: "Frontend Specialist",
+    company: "Creative Design Agency",
+    period: "2021 - 2023",
+    desc: "Especialización en interfaces interactivas complejas y sistemas de diseño para clientes internacionales. Colaboración con equipos de producto.",
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Startup Hub",
+    period: "2019 - 2021",
+    desc: "Desarrollo ágil de MVPs y productos digitales desde cero. Manejo del stack completo desde base de datos hasta despliegue en producción.",
+  },
+];
