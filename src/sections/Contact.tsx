@@ -15,7 +15,7 @@ export default function Contact() {
     <Window
       title={getText("contact_title")}
       color="#fdf4d8"
-      colorDark="#111d13"
+      colorDark="#4f5536"
     >
       <div className="contact">
         <h2>{getText("contact_subtitle")}</h2>
