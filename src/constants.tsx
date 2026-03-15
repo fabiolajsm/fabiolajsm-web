@@ -1,5 +1,6 @@
 
 import {
+  Atom,
   MessageCircle,
   Users,
   Lightbulb,
@@ -126,7 +127,7 @@ export const SOFT_SKILLS: Skill[] = [
 ];
 
 export const TECH_SKILLS: Skill[] = [
-  { name: "React", icon: <Code size={32} /> },
+  { name: "React", icon: <Atom size={32} /> },
   { name: "Redux", icon: <Layers size={32} /> },
   { name: "JavaScript", icon: <Braces size={32} /> },
   { name: "TypeScript", icon: <Braces size={32} /> },
