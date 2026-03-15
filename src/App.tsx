@@ -5,12 +5,14 @@ import { useI18n } from "./i18n/I18nContext";
 import Header from "./components/Header";
 import PhraseGenerator from "./components/PhraseGenerator";
 import SectionNavigation from "./components/SectionNavigation";
+import Skills from "./components/Skills";
 
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 
+import { SOFT_SKILLS, TECH_SKILLS } from "./constants";
 import "./index.css";
 
 export default function App() {
@@ -33,8 +35,14 @@ export default function App() {
           <About />
         </section>
 
-        <section id="stack">
-          {/* TODO: Carrousel animado con el stack */}
+        <section id="skills" className="skills-section">
+          <Skills
+            variant="grid"
+            translate={false}
+            title={getText("skills_technical")}
+            skills={TECH_SKILLS}
+          />
+          <Skills title={getText("skills_soft")} skills={SOFT_SKILLS} />
         </section>
 
         <section id="experience">

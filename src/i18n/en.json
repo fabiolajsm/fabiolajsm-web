@@ -17,5 +17,16 @@
   "project_invitationCreator_description": "App for creating and managing customized invitations.",
 
   "experience_studies": "Studies",
-  "experience_jobs": "Jobs"
+  "experience_jobs": "Jobs",
+
+  "skills_technical": "Technical Skills",
+  "skills_soft": "Soft Skills",
+  "skills_communication": "Communication",
+  "skills_teamwork": "Teamwork",
+  "skills_problem_solving": "Problem Solving",
+  "skills_adaptability": "Adaptability",
+  "skills_time_management": "Time Management",
+  "skills_empathy": "Empathy",
+  "skills_critical_thinking": "Critical Thinking",
+  "skills_leadership": "Leadership"
 }

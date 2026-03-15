@@ -17,5 +17,16 @@
   "project_invitationCreator_description": "Aplicación para crear y gestionar invitaciones personalizadas.",
 
   "experience_studies": "Estudios",
-  "experience_jobs": "Trabajos"
+  "experience_jobs": "Trabajos",
+
+  "skills_technical": "Tecnologías",
+  "skills_soft": "Aptitudes",
+  "skills_communication": "Comunicación",
+  "skills_teamwork": "Trabajo en equipo",
+  "skills_problem_solving": "Resolución de problemas",
+  "skills_adaptability": "Adaptabilidad",
+  "skills_time_management": "Gestión del tiempo",
+  "skills_empathy": "Empatía",
+  "skills_critical_thinking": "Pensamiento crítico",
+  "skills_leadership": "Liderazgo"
 }

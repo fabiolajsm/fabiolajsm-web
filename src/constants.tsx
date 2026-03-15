@@ -1,3 +1,23 @@
+
+import {
+  MessageCircle,
+  Users,
+  Lightbulb,
+  RefreshCw,
+  Clock,
+  Heart,
+  Brain,
+  Target,
+  Code,
+  Database,
+  Globe,
+  Braces,
+  Server,
+  Smartphone,
+  Layers,
+} from "lucide-react";
+import { Skill } from "./components/Skills";
+
 type Project = {
   id: "ecommerce" | "budget" | "invitationCreator";
   link: string;
@@ -92,4 +112,32 @@ export const JOBS_DATA = [
     period: "2019 - 2021",
     desc: "Desarrollo ágil de MVPs y productos digitales desde cero. Manejo del stack completo desde base de datos hasta despliegue en producción.",
   },
+];
+
+export const SOFT_SKILLS: Skill[] = [
+  { name: "skills_communication", icon: <MessageCircle size={32} /> },
+  { name: "skills_teamwork", icon: <Users size={32} /> },
+  { name: "skills_problem_solving", icon: <Lightbulb size={32} /> },
+  { name: "skills_adaptability", icon: <RefreshCw size={32} /> },
+  { name: "skills_time_management", icon: <Clock size={32} /> },
+  { name: "skills_empathy", icon: <Heart size={32} /> },
+  { name: "skills_critical_thinking", icon: <Brain size={32} /> },
+  { name: "skills_leadership", icon: <Target size={32} /> },
+];
+
+export const TECH_SKILLS: Skill[] = [
+  { name: "React", icon: <Code size={32} /> },
+  { name: "Redux", icon: <Layers size={32} /> },
+  { name: "JavaScript", icon: <Braces size={32} /> },
+  { name: "TypeScript", icon: <Braces size={32} /> },
+  { name: "HTML", icon: <Globe size={32} /> },
+  { name: "CSS", icon: <Globe size={32} /> },
+  { name: "SASS", icon: <Globe size={32} /> },
+  { name: "SQL", icon: <Database size={32} /> },
+  { name: "Java", icon: <Server size={32} /> },
+  { name: "Postman", icon: <Server size={32} /> },
+  { name: "Android Studio", icon: <Smartphone size={32} /> },
+  { name: "Angular", icon: <Layers size={32} /> },
+  { name: "PHP", icon: <Server size={32} /> },
+  { name: "C", icon: <Code size={32} /> },
 ];

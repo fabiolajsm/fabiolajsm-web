@@ -67,6 +67,13 @@ h2 {
   margin-bottom: 50px;
 }
 
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .layout {
