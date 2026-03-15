@@ -141,3 +141,18 @@ export const TECH_SKILLS: Skill[] = [
   { name: "PHP", icon: <Server size={32} /> },
   { name: "C", icon: <Code size={32} /> },
 ];
+
+export const EMAIL = "suarezfabiola17@gmail.com";
+
+export const PHRASES = [
+  "phrase_01",
+  "phrase_02",
+  "phrase_03",
+  "phrase_04",
+  "phrase_05",
+  "phrase_06",
+  "phrase_07",
+  "phrase_08",
+  "phrase_09",
+  "phrase_10",
+];

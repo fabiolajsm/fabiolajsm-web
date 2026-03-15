@@ -30,8 +30,7 @@ export default function App() {
           <h2>{getText("subtitle")}</h2>
         </section>
 
-        <section id="contact/about" className="contact-about">
-          <Contact />
+        <section id="about">
           <About />
         </section>
 
@@ -51,6 +50,10 @@ export default function App() {
 
         <section id="projects">
           <Projects />
+        </section>
+
+        <section id="contact" className="contact-section">
+          <Contact />
         </section>
 
         <section id="phrase" className="phrase-section">

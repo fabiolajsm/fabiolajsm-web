@@ -1,0 +1,105 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* copy icon */
+.copy-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.copy-icon:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* email */
+.email-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+/* tooltip */
+.copy-tooltip {
+    pointer-events: none;
+    position: absolute;
+    top: -25px;
+    background: #edede9;
+    color: black;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: opacity 0.15s ease;
+}
+
+.copy-icon:hover .copy-tooltip {
+    opacity: 1;
+}
+
+.contact-link-text {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.contact-links a {
+    color: black;
+    font-style: italic;
+}
+
+/* DARK MODE */
+.dark .contact {
+    color: #edede9;
+}
+
+.dark .copy-tooltip {
+    color: #edede9;
+    background: black;
+}
+
+.dark .copy-icon {
+    color: #edede9;
+}
+
+.dark .contact-links a {
+    color: #edede9;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: none;
+    }
+}

@@ -1,24 +1,18 @@
 {
   "title": "Hi! I'm Fabiola Suárez",
   "subtitle": "Full Stack Developer",
-  
   "navbar_about": "About Me",
   "navbar_experience": "Experience",
   "navbar_projects": "Projects",
   "navbar_contact": "Contact",
-
   "project_ecommerce_title": "E-Commerce",
   "project_ecommerce_description": "Full e-commerce interface with product listing, cart and checkout flow built with React.",
-
   "project_budget_title": "Budget Manager",
   "project_budget_description": "Budget management app with CRUD operations and state management.",
-
   "project_invitationCreator_title": "Invitation Creator",
   "project_invitationCreator_description": "App for creating and managing customized invitations.",
-
   "experience_studies": "Studies",
   "experience_jobs": "Jobs",
-
   "skills_technical": "Technical Skills",
   "skills_soft": "Soft Skills",
   "skills_communication": "Communication",
@@ -28,5 +22,21 @@
   "skills_time_management": "Time Management",
   "skills_empathy": "Empathy",
   "skills_critical_thinking": "Critical Thinking",
-  "skills_leadership": "Leadership"
+  "skills_leadership": "Leadership",
+  "contact_title": "Contact",
+  "contact_subtitle": "Thanks for making it this far!",
+  "contact_text_1": "I'm motivated by innovative, creative projects with real impact. If you have an idea where you think I could contribute, an opportunity where I could be part of the team, or just want to say hi, feel free to reach out.",
+  "contact_text_2": "Other links",
+  "copy_tooltip": "Copy",
+  "phrase_tooltip": "Quote of the day",
+  "phrase_01": "Made with ♥ by Fabiola Suárez",
+  "phrase_02": "Slow and steady",
+  "phrase_03": "It's not difficult, it's just new",
+  "phrase_04": "If you weren't ready, you wouldn't have the opportunity",
+  "phrase_05": "You don't need more motivation; you need better habits",
+  "phrase_06": "There are many first times still ahead",
+  "phrase_07": "If you're going to dream, dream big",
+  "phrase_08": "It's a privilege to be here and now",
+  "phrase_09": "Don't take anything personally",
+  "phrase_10": "Res, non verba: actions, not words"
 }

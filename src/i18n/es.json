@@ -1,24 +1,18 @@
 {
   "title": "Hola! Soy Fabiola Suárez",
   "subtitle": "Full Stack Developer",
-
   "navbar_about": "Sobre mí",
   "navbar_experience": "Experiencia",
   "navbar_projects": "Proyectos",
   "navbar_contact": "Contacto",
-
   "project_ecommerce_title": "E-Commerce",
   "project_ecommerce_description": "Interfaz completa de e-commerce con listado de productos, carrito y flujo de compra hecha con React.",
-
   "project_budget_title": "Gestor de Presupuestos",
   "project_budget_description": "Aplicación de gestión de presupuestos con operaciones CRUD y manejo de estado.",
-
   "project_invitationCreator_title": "Creador de Invitaciones",
   "project_invitationCreator_description": "Aplicación para crear y gestionar invitaciones personalizadas.",
-
   "experience_studies": "Estudios",
   "experience_jobs": "Trabajos",
-
   "skills_technical": "Tecnologías",
   "skills_soft": "Aptitudes",
   "skills_communication": "Comunicación",
@@ -28,5 +22,21 @@
   "skills_time_management": "Gestión del tiempo",
   "skills_empathy": "Empatía",
   "skills_critical_thinking": "Pensamiento crítico",
-  "skills_leadership": "Liderazgo"
+  "skills_leadership": "Liderazgo",
+  "contact_title": "Contacto",
+  "contact_subtitle": "¡Gracias por llegar hasta acá!",
+  "contact_text_1": "Me motiva participar en proyectos innovadores, creativos y con impacto. Si tienes una idea en la que crees que puedo aportar, una oportunidad donde pueda ser parte o simplemente quieres saludar, no dudes en contactarme",
+  "contact_text_2": "Otros links",
+  "copy_tooltip": "Copiar",
+  "phrase_tooltip": "Frase del día",
+  "phrase_01": "Hecho con ♥ por Fabiola Suárez",
+  "phrase_02": "Sin prisa, pero sin pausa",
+  "phrase_03": "No es difícil, solo es nuevo",
+  "phrase_04": "Si no estuvieras listo, no tendrías la oportunidad",
+  "phrase_05": "No necesitas más motivación; necesitas más hábitos",
+  "phrase_06": "Quedan muchas primeras veces",
+  "phrase_07": "Si vas a soñar, exagera",
+  "phrase_08": "Es un privilegio estar aquí y ahora",
+  "phrase_09": "No te tomes nada personal",
+  "phrase_10": "Res, non verba: hechos, no palabras"
 }
