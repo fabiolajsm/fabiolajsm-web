@@ -14,7 +14,7 @@ export default function PhraseGenerator() {
     const [isAnimating, setIsAnimating] = useState(false);
 
     return (
-        <div className={`phrase-container ${theme}`}>
+        <footer className={`phrase-container ${theme}`}>
             <button
                 id="phrase-button"
                 className="phrase-button"
@@ -29,7 +29,7 @@ export default function PhraseGenerator() {
                     {getText(PHRASES[currentIndex] as Parameters<typeof getText>[0])}
                 </p>
             </div>
-        </div>
+        </footer>
     );
     function generateNewPhrase() {
         if (PHRASES.length === 0) return;

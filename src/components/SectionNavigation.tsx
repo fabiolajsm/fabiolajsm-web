@@ -5,6 +5,7 @@ import {
   Brain,
   BriefcaseBusiness,
   CodeXml,
+  LucideIcon,
   Mail,
   UserRound,
 } from "lucide-react";
@@ -17,23 +18,32 @@ type SectionLabel =
   | "navbar_projects"
   | "navbar_contact";
 
+type Section = {
+  icon: LucideIcon;
+  label: SectionLabel;
+  target: string;
+};
+
 export default function SectionNavigation() {
   const { getText } = useI18n();
   const theme = useSelector((state: RootState) => state.ui.theme);
 
-  const sections: { icon: React.ComponentType<{ size?: number }>; label: SectionLabel }[] = [
-    { icon: UserRound, label: "navbar_about" },
-    { icon: Brain, label: "navbar_skills" },
-    { icon: BriefcaseBusiness, label: "navbar_experience" },
-    { icon: CodeXml, label: "navbar_projects" },
-    { icon: Mail, label: "navbar_contact" },
+  const sections: Section[] = [
+    { icon: UserRound, label: "navbar_about", target: "about" },
+    { icon: Brain, label: "navbar_skills", target: "skills" },
+    { icon: BriefcaseBusiness, label: "navbar_experience", target: "experience" },
+    { icon: CodeXml, label: "navbar_projects", target: "projects" },
+    { icon: Mail, label: "navbar_contact", target: "contact" },
   ];
 
   return (
     <nav id="sectionNavigation" className="sectionNavigation">
-      {sections.map(({ icon: Icon, label }) => (
+      {sections.map(({ icon: Icon, label, target }) => (
         <div key={label} className={`sectionNavigation_item ${theme}`}>
-          <button className="sectionNavigation_button">
+          <button
+            className="sectionNavigation_button"
+            onClick={() => scrollToSection(target)}
+          >
             <Icon size={20} />
           </button>
           <span className="sectionNavigation_label">{getText(label)}</span>
@@ -41,4 +51,14 @@ export default function SectionNavigation() {
       ))}
     </nav>
   );
+  function scrollToSection(id: string) {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }
 }
