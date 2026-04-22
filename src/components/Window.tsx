@@ -8,6 +8,7 @@ type WindowProps = {
   color?: string;
   colorDark?: string;
   children: ReactNode;
+  showHeaderButtons?: boolean;
 };
 
 export default function Window({
@@ -15,6 +16,7 @@ export default function Window({
   color = "#EADFC8",
   colorDark = "#3A3A3A",
   children,
+  showHeaderButtons = true,
 }: WindowProps) {
   const theme = useSelector((state: RootState) => state.ui.theme);
 
@@ -22,22 +24,19 @@ export default function Window({
 
   return (
     <div id="window-card">
-      <div
-        id="window-header"
-        style={{ backgroundColor: headerColor }}
-      >
-        <div id="window-buttons">
-          <span />
-          <span />
-          <span />
+      {showHeaderButtons && (
+        <div id="window-header" style={{ backgroundColor: headerColor }}>
+          <div id="window-buttons">
+            <span />
+            <span />
+            <span />
+          </div>
+
+          <h3 id="window-title">{title}</h3>
         </div>
+      )}
 
-        <h3 id="window-title">{title}</h3>
-      </div>
-
-      <div id="window-content">
-        {children}
-      </div>
+      <div id="window-content">{children}</div>
     </div>
   );
 }

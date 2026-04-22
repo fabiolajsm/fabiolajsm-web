@@ -1,0 +1,102 @@
+.about-symmetric {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* SIDES */
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.left {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.right {
+  align-items: flex-start;
+}
+
+/* CENTER */
+.about-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* LEFT ROW (invertido) */
+.left-row {
+  flex-direction: row-reverse;
+}
+
+/* TEXT */
+.row h4 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.row p {
+  font-size: 14px;
+  color: #444;
+  max-width: 220px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 4px solid #2d2d2d;
+  background: white;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FLECHAS */
+.arrow {
+  width: 90px;
+  height: 50px;
+  stroke: #f6a5b8;
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* animación */
+.arrow path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw 2.5s ease-in-out infinite;
+}
+
+@keyframes draw {
+  0% { stroke-dashoffset: 200; }
+  50% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 200; }
+}
+
+/* avatar float */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
