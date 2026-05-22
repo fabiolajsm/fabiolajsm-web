@@ -1,4 +1,10 @@
-import { BookOpen, Briefcase, Award, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  BookOpen,
+  Briefcase,
+  Award,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { useI18n } from "../i18n/I18nContext";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
@@ -8,12 +14,13 @@ import { JOBS_DATA, STUDIES_DATA } from "../constants";
 import FlipCard from "../components/FlipCard";
 
 import "./Experience.css";
+import { TranslationKey } from "../i18n";
 
 type ExperienceItem = {
-  title: string;
-  company: string;
-  period: string;
-  desc: string;
+  title: TranslationKey;
+  company: TranslationKey;
+  period: TranslationKey;
+  desc: TranslationKey;
 };
 
 export default function Experience() {
@@ -32,8 +39,7 @@ export default function Experience() {
   const studiesColors =
     theme === "dark" ? studiesColorsDark : studiesColorsLight;
 
-  const jobsColors =
-    theme === "dark" ? jobsColorsDark : jobsColorsLight;
+  const jobsColors = theme === "dark" ? jobsColorsDark : jobsColorsLight;
 
   return (
     <div className="experience-grid">
@@ -49,7 +55,7 @@ export default function Experience() {
             STUDIES_DATA.slice(studiesIndex, studiesIndex + 3),
             <Award size={30} />,
             studiesColors,
-            studiesIndex
+            studiesIndex,
           )}
         </div>
 
@@ -84,7 +90,7 @@ export default function Experience() {
             JOBS_DATA.slice(jobsIndex, jobsIndex + 3),
             <Briefcase size={30} />,
             jobsColors,
-            jobsIndex
+            jobsIndex,
           )}
         </div>
 
@@ -110,7 +116,7 @@ export default function Experience() {
     data: ExperienceItem[],
     icon: React.ReactNode,
     colors: string[],
-    startIndex: number
+    startIndex: number,
   ) {
     return data.map((item, index) => {
       const realIndex = startIndex + index;
@@ -118,10 +124,10 @@ export default function Experience() {
       return (
         <FlipCard
           key={realIndex}
-          title={item.title}
-          company={item.company}
-          period={item.period}
-          backContent={item.desc}
+          title={getText(item.title)}
+          company={getText(item.company)}
+          period={getText(item.period)}
+          backContent={getText(item.desc)}
           icon={icon}
           color={colors[realIndex % colors.length]}
         />
@@ -129,15 +135,13 @@ export default function Experience() {
     });
   }
 
-  function handlePrev(
-    setIndex: React.Dispatch<React.SetStateAction<number>>
-  ) {
+  function handlePrev(setIndex: React.Dispatch<React.SetStateAction<number>>) {
     setIndex((prev) => Math.max(prev - 3, 0));
   }
 
   function handleNext(
     setIndex: React.Dispatch<React.SetStateAction<number>>,
-    length: number
+    length: number,
   ) {
     setIndex((prev) => {
       const next = prev + 3;

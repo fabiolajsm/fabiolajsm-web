@@ -15,7 +15,7 @@ type SectionLabel =
   | "navbar_about"
   | "navbar_skills"
   | "navbar_experience"
-  | "navbar_projects"
+  | "navbar_projects_short"
   | "navbar_contact";
 
 type Section = {
@@ -32,7 +32,7 @@ export default function SectionNavigation() {
     { icon: UserRound, label: "navbar_about", target: "about" },
     { icon: Brain, label: "navbar_skills", target: "skills" },
     { icon: BriefcaseBusiness, label: "navbar_experience", target: "experience" },
-    { icon: CodeXml, label: "navbar_projects", target: "projects" },
+    { icon: CodeXml, label: "navbar_projects_short", target: "projects" },
     { icon: Mail, label: "navbar_contact", target: "contact" },
   ];
 
