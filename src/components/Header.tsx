@@ -5,7 +5,9 @@ import { Globe, Moon, SunMedium } from "lucide-react";
 
 import { setLanguage, setTheme } from "../store/uiSlice";
 import { LANGUAGES } from "../i18n";
-
+import {
+  ThemeToggle
+} from "./ThemeToogle";
 import "./Header.css";
 
 export default function Header() {
@@ -47,13 +49,7 @@ export default function Header() {
         )}
       </div>
 
-      <button
-        id="theme-toggle"
-        className="header-button"
-        onClick={() => dispatch(setTheme())}
-      >
-        {theme === "light" ? <SunMedium size={20} /> : <Moon size={20} />}
-      </button>
+      <ThemeToggle />
     </header>
   );
 }
