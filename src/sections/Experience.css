@@ -83,7 +83,7 @@
 @media (max-width: 768px) {
   .experience-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .experience-grid hr {
@@ -91,7 +91,6 @@
   }
 
   .experience-column {
-    align-items: center;
     min-width: unset;
   }
 

@@ -1,15 +1,29 @@
-.about-symmetric {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+.about-symmetric,
+.about-mobile {
+  font-family: "DM Sans", sans-serif;
 }
 
-/* SIDES */
+/* ---------- DESKTOP ---------- */
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.about-symmetric {
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 10px;
+}
+
 .about-side {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 28px;
 }
 
 .left {
@@ -21,48 +35,48 @@
   align-items: flex-start;
 }
 
-/* CENTER */
 .about-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ROW */
+/* ROWS */
 .row {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 6px;
+  /* MÁS PEGADO */
 }
 
-/* LEFT ROW (invertido) */
-.left-row {
-  flex-direction: row-reverse;
+.text-block {
+  max-width: 250px;
 }
 
-/* TEXT */
 .row h4 {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  line-height: 1;
 }
 
 .row p {
   font-size: 14px;
   color: #444;
-  max-width: 220px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* AVATAR */
 .avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 30px;
+  width: 210px;
+  height: 210px;
+  border-radius: 28px;
   overflow: hidden;
   border: 4px solid #2d2d2d;
   background: white;
-
   animation: float 3s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
 }
 
 .avatar img {
@@ -73,84 +87,101 @@
 
 /* FLECHAS */
 .arrow {
-  width: 90px;
-  height: 50px;
+  width: 70px;
+  /* MÁS CHICAS */
+  height: 45px;
   stroke: #f6a5b8;
   stroke-width: 2.5;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
+  flex-shrink: 0;
 }
 
-/* animación */
 .arrow path {
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
   animation: draw 2.5s ease-in-out infinite;
 }
 
-@keyframes draw {
-  0% { stroke-dashoffset: 200; }
-  50% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 200; }
+/* DARK MODE*/
+.dark-text h4,
+.dark-text p {
+  color: white;
 }
 
-/* avatar float */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 200;
+  }
 }
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
-  .about-symmetric {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 0 20px;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
   }
 
-  /* avatar arriba */
-  .about-center {
-    order: -1;
-  }
-
-  .avatar {
+  .mobile-avatar {
     width: 150px;
     height: 150px;
+    margin-bottom: 0;
   }
 
-  /* lados se unifican */
-  .about-side {
+  .about-list {
     width: 100%;
-    align-items: center;
-  }
-
-  .left,
-  .right {
-    align-items: center;
-    text-align: center;
-  }
-
-  /* rows en columna */
-  .row {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    gap: 14px;
   }
 
-  /* flechas más chicas */
-  .arrow {
-    width: 60px;
-    height: 40px;
+  .about-card {
+    background: rgba(255, 255, 255, .55);
+    border: 2px solid #2d2d2d15;
+    border-radius: 22px;
+    padding: 18px;
+    backdrop-filter: blur(10px);
   }
 
-  /* texto más cómodo */
-  .row h4 {
+  .about-card h4 {
     font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
   }
 
-  .row p {
-    font-size: 13px;
-    max-width: 260px;
+  .about-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    margin: 0;
   }
 }

@@ -5,7 +5,7 @@
   "navbar_skills": "Aptitudes",
   "navbar_experience": "Experiencia",
   "navbar_projects_short": "Proyectos",
-  "navbar_projects": "Algunos proyectos en github",
+  "navbar_projects": "Algunos proyectos",
   "navbar_contact": "Contacto",
   "project_ecommerce_title": "E-Commerce",
   "project_ecommerce_description": "Interfaz completa de e-commerce con listado de productos, carrito y flujo de compra hecha con React.",
