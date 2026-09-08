@@ -95,7 +95,7 @@
 
     width: 100%;
     min-width: 0;
-    height: calc(80px + env(safe-area-inset-bottom, 0px));
+    height: 80px;
     padding-bottom: env(safe-area-inset-bottom, 0px);
 
     flex-direction: row;
