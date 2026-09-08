@@ -33,8 +33,8 @@ export default function Experience() {
   const studiesColorsLight = ["#f7e1d7", "#e9edc9", "#bde0fe"];
   const jobsColorsLight = ["#bde0fe", "#f7e1d7", "#e9edc9"];
 
-  const studiesColorsDark = ["#5a3e36", "#4f5536", "#304e6b"];
-  const jobsColorsDark = ["#304e6b", "#5a3e36", "#4f5536"];
+  const studiesColorsDark = ["#7a3f4a", "#8a5d3b", "#3e5f7a"];
+  const jobsColorsDark = ["#7a3f4a", "#8a5d3b", "#3e5f7a"];
 
   const studiesColors =
     theme === "dark" ? studiesColorsDark : studiesColorsLight;
@@ -43,41 +43,6 @@ export default function Experience() {
 
   return (
     <div className="experience-grid">
-      {/* STUDIES */}
-      <div className="experience-column">
-        <div className="experience-header">
-          <BookOpen />
-          <h4>{getText("experience_studies")}</h4>
-        </div>
-
-        <div className="experience-cards">
-          {renderCards(
-            STUDIES_DATA.slice(studiesIndex, studiesIndex + 3),
-            <Award size={30} />,
-            studiesColors,
-            studiesIndex,
-          )}
-        </div>
-
-        <div className="carousel-controls">
-          <button
-            onClick={() => handlePrev(setStudiesIndex)}
-            disabled={studiesIndex === 0}
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          <button
-            onClick={() => handleNext(setStudiesIndex, STUDIES_DATA.length)}
-            disabled={studiesIndex + 3 >= STUDIES_DATA.length}
-          >
-            <ChevronRight size={20} />
-          </button>
-        </div>
-      </div>
-
-      <hr />
-
       {/* JOBS */}
       <div className="experience-column">
         <div className="experience-header">
@@ -105,6 +70,41 @@ export default function Experience() {
           <button
             onClick={() => handleNext(setJobsIndex, JOBS_DATA.length)}
             disabled={jobsIndex + 3 >= JOBS_DATA.length}
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      {/* STUDIES */}
+      <div className="experience-column">
+        <div className="experience-header">
+          <BookOpen />
+          <h4>{getText("experience_studies")}</h4>
+        </div>
+
+        <div className="experience-cards">
+          {renderCards(
+            STUDIES_DATA.slice(studiesIndex, studiesIndex + 3),
+            <Award size={30} />,
+            studiesColors,
+            studiesIndex,
+          )}
+        </div>
+
+        <div className="carousel-controls">
+          <button
+            onClick={() => handlePrev(setStudiesIndex)}
+            disabled={studiesIndex === 0}
+          >
+            <ChevronLeft size={20} />
+          </button>
+
+          <button
+            onClick={() => handleNext(setStudiesIndex, STUDIES_DATA.length)}
+            disabled={studiesIndex + 3 >= STUDIES_DATA.length}
           >
             <ChevronRight size={20} />
           </button>

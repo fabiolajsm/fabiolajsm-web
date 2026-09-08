@@ -46,7 +46,6 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  /* MÁS PEGADO */
 }
 
 .text-block {
@@ -60,23 +59,23 @@
   line-height: 1;
 }
 
-.row p {
-  font-size: 14px;
-  color: #444;
+/* Shared text styles */
+.row p,
+.about-accordion-inner p {
+  color: black;
   line-height: 1.5;
   margin: 0;
 }
 
-/* AVATAR */
+/* Avatar */
 .avatar {
   width: 210px;
   height: 210px;
   border-radius: 28px;
   overflow: hidden;
-  border: 4px solid #2d2d2d;
-  background: white;
+  border: 3px solid #2d2d2d;
   animation: float 3s ease-in-out infinite;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .avatar img {
@@ -85,10 +84,9 @@
   object-fit: cover;
 }
 
-/* FLECHAS */
+/* Arrows */
 .arrow {
   width: 70px;
-  /* MÁS CHICAS */
   height: 45px;
   stroke: #f6a5b8;
   stroke-width: 2.5;
@@ -104,7 +102,7 @@
   animation: draw 2.5s ease-in-out infinite;
 }
 
-/* DARK MODE*/
+/* DARK MODE */
 .dark-text h4,
 .dark-text p {
   color: white;
@@ -147,41 +145,92 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
     margin: auto;
+    width: 100%;
   }
 
   .mobile-avatar {
     width: 150px;
     height: 150px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
-  .about-list {
+  .about-accordion {
     width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
 
-  .about-card {
-    background: rgba(255, 255, 255, .55);
-    border: 2px solid #2d2d2d15;
+  .about-accordion-item {
+    border: 3px solid #2d2d2d;
     border-radius: 22px;
-    padding: 18px;
     backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
   }
 
-  .about-card h4 {
+  .about-accordion-item.open {
+    border-color: #f6a5b8;
+  }
+
+  .about-accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 14px 22px;
+    font-family: inherit;
+  }
+
+  .about-letter {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2d2d2d;
+  }
+
+  .about-accordion-item.dark-text .about-letter {
+    color: white;
+  }
+
+  .about-accordion-icon {
     font-size: 22px;
     font-weight: 800;
-    margin-bottom: 8px;
+    color: #f6a5b8;
+    line-height: 1;
   }
 
-  .about-card p {
-    font-size: 14px;
+  .about-accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+  }
+
+  .about-accordion-item.open .about-accordion-content {
+    grid-template-rows: 1fr;
+  }
+
+  .about-accordion-inner {
+    overflow: hidden;
+    padding: 0 22px;
+  }
+
+  .about-accordion-item.open .about-accordion-inner {
+    padding: 0 22px 18px;
+  }
+
+  .about-accordion-inner h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 8px;
+  }
+
+  .about-accordion-inner p {
     line-height: 1.6;
-    color: black;
-    margin: 0;
+    text-align: justify;
   }
 }

@@ -110,7 +110,7 @@
    DARK MODE
 ========================= */
 .sectionNavigation_item.dark .sectionNavigation_button {
-  background-color: #1D212B;
+  background-color: transparent;
   /* gris oscuro elegante */
   border: 2px solid #111827;
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);

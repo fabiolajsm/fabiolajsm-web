@@ -99,30 +99,29 @@
     color: #f1faee;
 }
 
-
 /* tooltip */
 .phrase-tooltip {
-  position: absolute;
-  top: -60px;
+    position: absolute;
+    top: -60px;
 
-  background: #e5e5e5;
-  color: #222;
+    background: #e5e5e5;
+    color: #222;
 
-  font-size: 12px;
-  font-family: 'DM Sans', sans-serif;
-  padding: 5px 8px;
-  border-radius: 6px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 5px 8px;
+    border-radius: 6px;
 
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
 }
 
 .phrase-button:hover .phrase-tooltip {
-  opacity: 1;
+    opacity: 1;
 }
 
 .dark .phrase-tooltip {
-  background: black;
-  color: #edede9;
+    background: black;
+    color: #edede9;
 }

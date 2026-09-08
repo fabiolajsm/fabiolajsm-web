@@ -7,7 +7,11 @@ export default function Projects() {
   const { getText } = useI18n();
 
   return (
-    <Window title={getText("navbar_projects")} color="#f7e1d7" colorDark="#5a3e36">
+    <Window
+      title={getText("navbar_projects")}
+      color="#f7e1d7"
+      colorDark="#262626"
+    >
       <div className="projects-container">
         {PROJECTS.map((project) => (
           <a

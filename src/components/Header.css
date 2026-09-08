@@ -12,17 +12,13 @@
 .header-button {
   width: 40px;
   height: 40px;
-
   border-radius: 12px;
   border: 2px solid #d9dde1;
   background: #edede9;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
   box-shadow: 2px 2px 0px 0px #1e2530;
   transition: all 0.2s ease;
 }
@@ -32,7 +28,6 @@
   box-shadow: 0px 0px 0px 0px #1e2530;
 }
 
-/* Animación de CSS */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -55,21 +50,17 @@
   right: 0;
   width: 120px;
   padding: 10px;
-
   background: #edede9;
   border: 2px solid #d9dde1;
   border-radius: 10px;
   box-shadow: 5px 5px 0px 0px #1e2530;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #7f7f7f;
-
   animation: slideIn 0.2s ease-out;
 }
 
@@ -96,9 +87,9 @@
 
 /* DARK MODE */
 .dark .header-button {
-  border: 2px solid #1D212B;
+  border: 2px solid #1d212b;
   background: #14181f;
-  box-shadow: 0.2px 0.2px 0.2px 0.2px #1D212B;
+  box-shadow: 0.2px 0.2px 0.2px 0.2px #1d212b;
 }
 
 .dark .header-button:hover {
@@ -106,18 +97,17 @@
 }
 
 .dark .header-button svg {
-  color: #F5F3F0;
+  color: #f5f3f0;
   opacity: 80%;
 }
 
-/* Dropdown */
 .dark .language-dropdown {
-  border: 2px solid #1D212B;
+  border: 2px solid #1d212b;
   background: #14181f;
   box-shadow: 5px 5px 0px 0px #000000;
-  color: #F5F3F0;
+  color: #f5f3f0;
 }
 
 .dark .language-option:hover {
-  background-color: #1D212B;
+  background-color: #1d212b;
 }

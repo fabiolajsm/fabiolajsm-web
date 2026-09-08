@@ -26,6 +26,7 @@
     max-width: 400px;
     backface-visibility: hidden;
     border-radius: 20px;
+    border: 1px solid var(--flip-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,16 +38,13 @@
 
 .flip-card-front {
     gap: 12px;
+    background: var(--flip-color);
 }
 
 .flip-card-back {
     transform: rotateY(180deg);
     justify-content: flex-start;
     overflow-y: auto;
-}
-
-.flip-card-back::-webkit-scrollbar {
-    width: auto;
 }
 
 .flip-card-title {
@@ -78,8 +76,11 @@
     text-align: center;
 }
 
-
 /* DARK MODE */
+.dark .flip-card-front {
+    background: transparent;
+}
+
 .dark .flip-card-title,
 .dark .flip-card-company,
 .dark .flip-card-period,
