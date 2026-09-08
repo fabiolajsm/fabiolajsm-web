@@ -95,6 +95,7 @@
 
     width: 100%;
     min-width: 0;
+    box-sizing: content-box;
     height: 80px;
     padding-bottom: env(safe-area-inset-bottom, 0px);
 
