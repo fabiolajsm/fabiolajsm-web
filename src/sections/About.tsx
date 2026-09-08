@@ -103,7 +103,7 @@ export default function About() {
 
                 <div className="about-accordion-content">
                   <div className="about-accordion-inner">
-                    <h4>{getText(`${key}_title`)}</h4>
+                    <h4>{getText(`${key}_title_mobile`)}</h4>
                     <p>{getText(key)}</p>
                   </div>
                 </div>
