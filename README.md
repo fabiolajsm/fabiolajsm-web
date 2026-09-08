@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Portfolio — Fabiola Suárez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal portfolio, built from scratch with React and TypeScript. No AI-assisted code: just documentation, trial and error, and dusting off the fundamentals.
 
-## Available Scripts
+**🔗 Live site:** https://fabiolajsm-web.vercel.app/
 
-In the project directory, you can run:
+<!-- Screenshot: full page, light mode, desktop -->
+<img width="1907" height="980" alt="image" src="https://github.com/user-attachments/assets/83588d64-e45e-4c09-9e97-5f6f5fabd4d1" />
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- Screenshot: full page, dark mode, desktop -->
+<img width="1902" height="969" alt="image" src="https://github.com/user-attachments/assets/b6e40d9f-b439-42dd-bb72-a9b33bce7209" />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## About this project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I wanted to build something simple that felt like *me*: colorful, a little playful, with small personal touches. It was also a way to step back from AI tools for a bit and reconnect with the basics — reading docs, thinking through UI states, and building everything by hand.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🌗 **Light / dark mode** — toggle in the header, colors tuned separately for each theme (not just inverted)
+- 🌍 **Multi-language support (i18n)** — switch languages from the header, all content is translated through a custom `I18nContext`
+- 🧠 **About section** — desktop shows a mind-map layout with animated arrows; mobile shows an accordion where multiple sections can stay open at once
+- 🔄 **Flip cards** — used for experience/studies, click to reveal more detail on the back
+- 💬 **Phrase generator** — a footer widget that cycles through quotes that resonate with me
+- 🚧 **Projects section** — showcases my work, with clear "coming soon" states for projects still in progress
+- 📱 **Fully responsive** — tested across mobile, tablet, and desktop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="590" height="1280" alt="image" src="https://github.com/user-attachments/assets/94da90db-799c-4593-9c31-53905e3c8265" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Tech stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **React** + **TypeScript**
+- **Redux** (Redux Toolkit) — for theme and language state
+- **CSS** — custom styles, no UI framework, animations hand-written
+- **lucide-react** — icons
+- Deployed on **Vercel**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clone the repo and install dependencies:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+```
 
-## Learn More
+Run the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open [http://localhost:3000](http://localhost:3000) in your browser. The page reloads automatically as you edit files.
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Project structure
+
+```
+src/
+├── assets/          # Images, icons
+├── components/       # Reusable components (Window, FlipCard, ThemeToggle...)
+├── i18n/             # Translation context and language files
+├── sections/         # Page sections (About, Projects, Experience...)
+├── store/            # Redux slices (theme, language)
+└── constants/        # Static data (projects, phrases...)
+```
+
+## Contact
+
+Currently open to new opportunities. Feel free to reach out!
+
+- LinkedIn: https://www.linkedin.com/in/fabiolajsm/
+- Email: suarezfabiola17@gmail.com
+- GitHub: https://github.com/fabiolajsm
