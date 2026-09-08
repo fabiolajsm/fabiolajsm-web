@@ -21,24 +21,24 @@ import { TranslationKey } from "./i18n";
 
 type Project = {
   id: "ecommerce" | "budget" | "invitationCreator";
-  link: string;
+  link: string | null;
   previewClass: string;
 };
 
 export const PROJECTS: Project[] = [
   {
     id: "ecommerce",
-    link: "https://github.com/tuusuario/ecommerce",
+    link: null,
     previewClass: "ecommerce",
   },
   {
     id: "budget",
-    link: "https://github.com/tuusuario/budget-manager",
+    link: null,
     previewClass: "budget",
   },
   {
     id: "invitationCreator",
-    link: "https://github.com/tuusuario/invitationCreator-v1",
+    link: null,
     previewClass: "invitationCreator",
   },
 ];

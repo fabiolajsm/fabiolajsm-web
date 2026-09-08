@@ -13,23 +13,48 @@ export default function Projects() {
       colorDark="#262626"
     >
       <div className="projects-container">
-        {PROJECTS.map((project) => (
-          <a
-            key={project.id}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card"
-          >
-            <div className={`project-preview ${project.previewClass}`} />
+        {PROJECTS.map((project) => {
+          const cardContent = (
+            <>
+              <div className={`project-preview ${project.previewClass}`} />
 
-            <h3>{getText(`project_${project.id}_title`)}</h3>
+              {!project.link && (
+                <span className="project-badge">
+                  {getText("project_coming_soon")}
+                </span>
+              )}
 
-            <p className="project-description">
-              {getText(`project_${project.id}_description`)}
-            </p>
-          </a>
-        ))}
+              <h3>{getText(`project_${project.id}_title`)}</h3>
+
+              <p className="project-description">
+                {getText(`project_${project.id}_description`)}
+              </p>
+            </>
+          );
+
+          if (!project.link) {
+            return (
+              <div
+                key={project.id}
+                className="project-card project-card-disabled"
+              >
+                {cardContent}
+              </div>
+            );
+          }
+
+          return (
+            <a
+              key={project.id}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
+            >
+              {cardContent}
+            </a>
+          );
+        })}
       </div>
     </Window>
   );
