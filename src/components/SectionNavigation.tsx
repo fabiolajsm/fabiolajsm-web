@@ -24,21 +24,28 @@ type Section = {
   target: string;
 };
 
+const SECTIONS: Section[] = [
+  { icon: UserRound, label: "navbar_about", target: "about" },
+  { icon: Brain, label: "navbar_skills", target: "skills" },
+  { icon: BriefcaseBusiness, label: "navbar_experience", target: "experience" },
+  { icon: CodeXml, label: "navbar_projects_short", target: "projects" },
+  { icon: Mail, label: "navbar_contact", target: "contact" },
+];
+
 export default function SectionNavigation() {
   const { getText } = useI18n();
   const theme = useSelector((state: RootState) => state.ui.theme);
 
-  const sections: Section[] = [
-    { icon: UserRound, label: "navbar_about", target: "about" },
-    { icon: Brain, label: "navbar_skills", target: "skills" },
-    { icon: BriefcaseBusiness, label: "navbar_experience", target: "experience" },
-    { icon: CodeXml, label: "navbar_projects_short", target: "projects" },
-    { icon: Mail, label: "navbar_contact", target: "contact" },
-  ];
+  function scrollToSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 
   return (
     <nav id="sectionNavigation" className="sectionNavigation">
-      {sections.map(({ icon: Icon, label, target }) => (
+      {SECTIONS.map(({ icon: Icon, label, target }) => (
         <div key={label} className={`sectionNavigation_item ${theme}`}>
           <button
             className="sectionNavigation_button"
@@ -51,14 +58,4 @@ export default function SectionNavigation() {
       ))}
     </nav>
   );
-  function scrollToSection(id: string) {
-    const element = document.getElementById(id);
-
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }
 }

@@ -56,6 +56,7 @@
   padding: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
+  color: black;
 }
 
 .carousel-controls button:hover {

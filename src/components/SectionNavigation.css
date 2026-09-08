@@ -1,7 +1,9 @@
 .sectionNavigation {
+  --nav-offset: clamp(20px, calc(50% - 640px), 400px);
+
   min-width: 150px;
   position: fixed;
-  left: calc(50% - 640px);
+  left: var(--nav-offset);
   bottom: 0;
   top: 50px;
   height: 100%;
@@ -65,6 +67,22 @@
   color: black;
 }
 
+/* Tablet / laptop */
+@media (max-width: 1280px) and (min-width: 769px) {
+  .sectionNavigation {
+    --nav-offset: 12px;
+  }
+
+  .sectionNavigation_button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sectionNavigation_label {
+    font-size: 10px;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .sectionNavigation {
@@ -76,9 +94,9 @@
     top: auto;
 
     width: 100%;
-    /* same height as fixed navigation bar */
-    height: 80px;
     min-width: 0;
+    height: calc(80px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 
     flex-direction: row;
     justify-content: space-around;
@@ -111,18 +129,17 @@
 ========================= */
 .sectionNavigation_item.dark .sectionNavigation_button {
   background-color: transparent;
-  /* gris oscuro elegante */
   border: 2px solid #111827;
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);
 }
 
 .sectionNavigation_item.dark .sectionNavigation_button svg {
-  color: #F5F3F0;
+  color: #f5f3f0;
   opacity: 50%;
 }
 
 .sectionNavigation_item.dark .sectionNavigation_label {
-  color: #F5F3F0;
+  color: #f5f3f0;
   opacity: 50%;
 }
 
@@ -132,11 +149,11 @@
 }
 
 .sectionNavigation_item.dark:hover .sectionNavigation_button svg {
-  color: #F5F3F0;
+  color: #f5f3f0;
   opacity: 90%;
 }
 
 .sectionNavigation_item.dark:hover .sectionNavigation_label {
-  color: #F5F3F0;
+  color: #f5f3f0;
   opacity: 90%;
 }
