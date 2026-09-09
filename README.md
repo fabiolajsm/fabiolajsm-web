@@ -9,7 +9,7 @@ My personal portfolio, built from scratch with React and TypeScript. No AI-assis
 
 
 <!-- Screenshot: full page, dark mode, desktop -->
-<img width="1902" height="969" alt="image" src="https://github.com/user-attachments/assets/b6e40d9f-b439-42dd-bb72-a9b33bce7209" />
+<img width="959" height="539" alt="Screenshot 2026-09-08 231847" src="https://github.com/user-attachments/assets/c1ba2307-2d11-401b-98eb-6369d0ca0f80" />
 
 
 ## About this project
