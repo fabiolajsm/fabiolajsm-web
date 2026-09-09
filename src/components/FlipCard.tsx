@@ -29,6 +29,8 @@ export default function FlipCard({
       <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
         {/* Front */}
         <div className="flip-card-front">
+          <span className="flip-card-hint">↻</span>
+
           <div className="flip-card-icon">{icon}</div>
 
           <h3 className="flip-card-title">{title}</h3>
